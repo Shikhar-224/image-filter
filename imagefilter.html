@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="filter.css">
+</head>
+<body>
+<div>
+<h1>Filter Fun!</h1>
+<canvas id = "can1"> </canvas>
+<canvas id = "can2"> </canvas>
+<p>
+Please Select a File:
+<input type = "file" id = "finput" accept = "image/*" multiple = "false" onchange = "upload()">
+</p>
+
+<p>
+<input type = "button" value = "Grayscale" onclick = "makeGray()"> 
+<input type = "button" value = "Red" onclick = "makeRed()"> 
+<input type = "button" value = "Add Frame" onclick = "makeFrame()"> 
+<input type = "button" value = "Rainbow Effect" onclick = "makeRainbow()"> 
+<input type = "button" value = "Blur Filter" onclick = "makeBlur()"> 
+
+<input type = "button" value = "Reset" onclick = "reset()"> 
+</p>
+<p id = "colorPicked">
+ Choose your own filter color:
+<input type = "color" value = "#ffffff" id = "clr" onchange = "chooseColor()"> 
+ 
+<input type = "button" value = "Make Filter" onclick = "doColor()"> 
+</p>
+  </div>
+<script src = "https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"> </script>
+<script src = "https://www.dukelearntoprogram.com/course1/common/js/image/SimplePixel.js"> </script>
+<script src=add.js></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+h1 {
+  font-family: courier;
+}
+
+div {
+  background-color: #f3f3e3;
+  border-radius: 5pt;
+  width: 90%;
+}
+
+canvas {
+  height: 150pt;
+  border: 5px solid lightgray;
+  border-radius: 5pt;
+}
+
+input {
+  font-size: 9pt; 
+}
+
+p {
+  font-family: arial;
+}
+
+#colorPicked {
+  color: red;
+}
